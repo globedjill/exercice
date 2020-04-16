@@ -4,6 +4,10 @@ body{
     background-color: #FFE9D4;
     }
 /*header*/
+/*j'ai supprimer l'entete et remplacer par id menu dans le header 
+Ajouter une direction et justify a flexbox
+Supprimer la hauteur fixe car je l'ajoute ailleur
+Ajouter une marge externe*/
 #menu{
     position: fixed;
     top:0px;
@@ -16,6 +20,10 @@ body{
     flex-wrap: wrap;
     z-index: 1;
     }
+/*conteneur logo*/
+/*Ajout d'une balise picture qui englobe ton image sur laquelle j'applique un margin auto
+du coup je supprime la position et tous cela reste stable sur ta page 
+peut importe le format*/
     #logo{
         margin: auto;
         }
@@ -25,6 +33,8 @@ body{
         width: 160px;
         opacity: 1;
         }
+    /*h3*/
+    /*Ajout d'un margin auto*/
     #title
         {
         margin:auto;
@@ -35,18 +45,24 @@ body{
         color: #205abe; 
         }
 /*main*/
+/*div transformer en main avec du flex pour garder le responsive*/
 #general
     {
     display: flex;
     flex-direction: column;
     }
     /*section slider*/
+/*suppresion de la position 
+Ajout de flex et d'un margin top*/
     .carousel-container
         {
         display: flex;
         flex-direction: column;
         margin-top:100px; 
         }
+/*Ajout de flex et d'un Margin- bottom qui permet aux boutons
+ de rester en place et de bouger en meme temps que le reste de la page 
+ sans empiéter sur le slider*/
         .carousel-slide 
             { 
             display: flex;
@@ -60,41 +76,42 @@ body{
                 margin: auto; 
                 width: 100%;
                 }
-                .btn
-                {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                position: relative;
-                border: 2px solid #205abe;
-                border-radius: 5px; 
-                box-shadow: 1px 1px 2px inset;
-                margin:auto; 
-                }
         .active
+            {
+            opacity: 1; 
+            }
+/*Conteneur bouton*/
+/*Avec encore du flex*/
+.btn
+    {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #205abe;
+    border-radius: 5px; 
+    box-shadow: 1px 1px 2px inset;
+    margin:auto; 
+    }   
+/*Boutons slider avant-arrière*/
+/*Suppression de la position du transform
+du display,left, top et Z-index */
+    .prevBtn,.nextBtn
         {
-        opacity: 1; 
-        }
-    /*Boutons slider avant-arrière*/
-    .prevBtn,
-    .nextBtn{
         font-size: 18px;
         font-weight: bolder;
         color: #205abe;
         background-color: transparent;
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
         width:120px;
         height: 40px;
         border:none;    
-    }
+        }
 
     /*Carte intéractive*/
-
-    #maCarte {
+    #maCarte 
+        {
         height: 550px;
-    }
+        }
 
 
 
