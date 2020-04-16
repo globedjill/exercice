@@ -3,9 +3,8 @@ body{
     padding: 0;
     background-color: #FFE9D4;
     }
-
-#menu
-    {
+/*header*/
+#menu{
     position: fixed;
     top:0px;
     width: 100%;
@@ -17,8 +16,7 @@ body{
     flex-wrap: wrap;
     z-index: 1;
     }
-    #logo
-        {
+    #logo{
         margin: auto;
         }
     .logo
@@ -36,6 +34,7 @@ body{
         font-size: 26px; 
         color: #205abe; 
         }
+/*main*/
 #general
     {
     display: flex;
