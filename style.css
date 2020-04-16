@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFE9D4;
+    }
+
+#menu
+    {
+    position: fixed;
+    top:0px;
+    width: 100%;
+    padding:20px;
+    background-color:#FED4AD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 1;
+    }
+    #logo
+        {
+        margin: auto;
+        }
+    .logo
+        {
+        position: unset;
+        width: 160px;
+        opacity: 1;
+        }
+    #title
+        {
+        margin:auto;
+        min-width: 350px;
+        font-weight: bold; 
+        font-style: italic; 
+        font-size: 26px; 
+        color: #205abe; 
+        }
+#general
+    {
+    display: flex;
+    flex-direction: column;
+    }
+    /*section slider*/
+    .carousel-container
+        {
+        display: flex;
+        flex-direction: column;
+        margin-top:100px; 
+        }
+        .carousel-slide 
+            { 
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 51%; 
+            }
+             img 
+                {
+                position: absolute;
+                opacity: 0; 
+                margin: auto; 
+                width: 100%;
+                }
+                .btn
+                {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                position: relative;
+                border: 2px solid #205abe;
+                border-radius: 5px; 
+                box-shadow: 1px 1px 2px inset;
+                margin:auto; 
+                }
+        .active
+        {
+        opacity: 1; 
+        }
+    /*Boutons slider avant-arrière*/
+    .prevBtn,
+    .nextBtn{
+        font-size: 18px;
+        font-weight: bolder;
+        color: #205abe;
+        background-color: transparent;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        width:120px;
+        height: 40px;
+        border:none;    
+    }
+
+    /*Carte intéractive*/
+
+    #maCarte {
+        height: 550px;
+    }
+
+
+

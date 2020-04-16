@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>exercice projet3</title>
+        <!--lien carte interactive-->
+        <!--end-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>  
+        <header id="menu">
+ <!--modif div entete et logo head -->
+                <picture id="logo">
+                    <img src="velologo.png" class="logo" alt="logo">
+                </picture>
+                <h3 id="title">Réservez votre vélo en toute tranquilité</h3>
+        </header>
+
+        <div id="general"> 
+            <section>
+                <div class="carousel-container">
+ <!--insertion d'un balise picture pour tes images a la place de ta div -->
+
+                    <picture class="carousel-slide">
+                        <img src="imageslider/imgtoulouse1.jpeg" class="active" alt="toulouse1">
+                        <img src="imageslider/imgtoulouse2.jpg" alt="toulouse2">
+                        <img src="imageslider/imgtoulouse3.jpg" alt="toulouse3">
+                   </picture> 
+<!--création d'une div qui englobe tes boutons -->    
+                <!-- boutons gauche-droite -->  
+                    <div class="btn">  
+                        <button class="prevBtn">Previous</button>
+                        <button class="nextBtn">Next</button>
+                    </div>
+                </div>
+            </section>
+                <!--Carte intéractive-->
+            <section>
+               <div id="maCarte">.</div>          
+            </section>
+                       
+            <footer>
+
+            </footer>
+        </div>
+            <script src="script.js"></script>
+    </body>
+</html>
+
